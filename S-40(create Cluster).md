@@ -257,4 +257,8 @@ export KOPS_STATE_STORE=s3://rajesh.k8s.locals
 ```
 kops delete cluster --name rajesh33.k8s.local --yes
 ```
+<img width="1885" height="445" alt="image" src="https://github.com/user-attachments/assets/4ad2dea5-b459-462e-9335-b3a715c9cdc0" />
+<img width="1897" height="446" alt="image" src="https://github.com/user-attachments/assets/4e2ad31f-abbf-4ae9-9b2b-9756b0628e1e" />
+
+
 ==================================================================
