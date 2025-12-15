@@ -234,7 +234,7 @@ export KOPS_STATE_STORE=s3://rajesh.k8s.locals
 ====================================================================
 ## This command creates a Kubernetes cluster configuration using kOps on AWS
 ```
-kops create cluster --name=rajesh33.k8s.local --zones=ap-northeast-3a --control-plane-size=m7i-flex.large --control-plane-count=1 --node-count=2 --node-size=t3.micro --image=ami-0aec5ae807cea9ce0
+kops create cluster --name=rajesh33.k8s.local --zones=ap-northeast-3a --control-plane-size=m7i-flex.large --control-plane-count=1 --node-count=2 --node-size=t3.micro --image=ami-06571d6ae17e327ff
 ```
 ## update cluster
 ```
