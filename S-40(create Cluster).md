@@ -242,7 +242,9 @@ kops create cluster --name=rajesh33.k8s.local --zones=ap-northeast-3a --control-
 ```
 kops update cluster --name rajesh33.k8s.local --yes --admin
 ```
+<img width="1887" height="470" alt="image" src="https://github.com/user-attachments/assets/8ac5afbe-9a56-4c0d-b845-c8d0851bd3d7" />
 
+<img width="1867" height="472" alt="image" src="https://github.com/user-attachments/assets/bd0bfd0e-6263-43f4-8031-10f848f7761b" />
 
 ====================================================================
 ## Delete  a cluster
@@ -250,6 +252,7 @@ kops update cluster --name rajesh33.k8s.local --yes --admin
 ```
 export KOPS_STATE_STORE=s3://rajesh.k8s.locals
 ```
+
 ### 2. kops delete 
 ```
 kops delete cluster --name rajesh33.k8s.local --yes
