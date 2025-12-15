@@ -234,11 +234,11 @@ export KOPS_STATE_STORE=s3://rajesh.k8s.locals
 ====================================================================
 ## This command creates a Kubernetes cluster configuration using kOps on AWS
 ```
-kops create cluster --name=shammu.k8s.local --zones=ap-northeast-3a --control-plane-size=m7i-flex.large --control-plane-count=1 --node-count=2 --node-size=t3.micro --image=ami-0fe4e90accd5cc34a
+kops create cluster --name=rajesh33.k8s.local --zones=ap-northeast-3a --control-plane-size=m7i-flex.large --control-plane-count=1 --node-count=2 --node-size=t3.micro --image=ami-0aec5ae807cea9ce0
 ```
 ## update cluster
 ```
-kops update cluster --name shammu.k8s.local --yes --admin
+kops update cluster --name rajesh33.k8s.local --yes --admin
 ```
 
 
@@ -246,10 +246,10 @@ kops update cluster --name shammu.k8s.local --yes --admin
 ## Delete  a cluster
 ### 1. export 
 ```
-export KOPS_STATE_STORE=s3://7aamdevopsshammuk8s.k8s.locals
+export KOPS_STATE_STORE=s3://rajesh.k8s.locals
 ```
 ### 2. kops delete 
 ```
-kops delete cluster --name shammu.k8s.local --yes
+kops delete cluster --name rajesh33.k8s.local --yes
 ```
 ==================================================================
