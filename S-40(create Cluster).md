@@ -228,6 +228,7 @@ aws s3api put-bucket-versioning \
 
 ### Set kOps state store environment variable
 export KOPS_STATE_STORE=s3://rajesh.k8s.locals
+<img width="1901" height="682" alt="image" src="https://github.com/user-attachments/assets/9730f293-b0f6-4631-9f6c-93409cc1a130" />
 
 ====================================================================
 ## This command creates a Kubernetes cluster configuration using kOps on AWS
@@ -238,6 +239,8 @@ kops create cluster --name=shammu.k8s.local --zones=ap-northeast-3a --control-pl
 ```
 kops update cluster --name shammu.k8s.local --yes --admin
 ```
+<img width="1697" height="255" alt="image" src="https://github.com/user-attachments/assets/0540e370-1679-4eb8-9d26-4464265ee2e6" />
+
 ====================================================================
 ## Delete  a cluster
 ### 1. export 
