@@ -202,24 +202,27 @@ Shows client and server version (server appears only if a cluster is connected)
 ## 📌 Recommended check:
 kubectl version --client
 
-====================================================================
+<img width="1910" height="777" alt="image" src="https://github.com/user-attachments/assets/b701a51e-733e-44ad-a413-add03bfb9e1c" />
 
-aws s3 mb s3://7aamdevopsshammuk8s.k8s.locals
-aws s3api put-bucket-versioning --bucket 7aamdevopsshammuk8s.k8s.locals --region ap-south-1 --versioning-configuration Status=Enabled
-export KOPS_STATE_STORE=s3://7aamdevopsshammuk8s.k8s.locals
+
+====================================================================
+```
+aws s3 mb s3://rajesh.k8s.locals
+aws s3api put-bucket-versioning --bucket rajesh.k8s.locals --region ap-south-1 --versioning-configuration Status=Enabled
+export KOPS_STATE_STORE=s3://rajesh.k8s.locals
 ```
 
 ### Create S3 bucket for kOps state store
-aws s3 mb s3://7aamdevopsshammuk8s.k8s.locals
+aws s3 mb s3://rajesh.k8s.locals
 
 ### Enable versioning on the S3 bucket
 aws s3api put-bucket-versioning \
-  --bucket 7aamdevopsshammuk8s.k8s.locals \
+  --bucket rajesh.k8s.locals \
   --region ap-south-1 \
   --versioning-configuration Status=Enabled
 
 ### Set kOps state store environment variable
-export KOPS_STATE_STORE=s3://7aamdevopsshammuk8s.k8s.locals
+export KOPS_STATE_STORE=s3://rajesh.k8s.locals
 
 ====================================================================
 ## This command creates a Kubernetes cluster configuration using kOps on AWS
