@@ -236,6 +236,8 @@ export KOPS_STATE_STORE=s3://rajesh.k8s.locals
 ```
 kops create cluster --name=rajesh33.k8s.local --zones=ap-northeast-3a --control-plane-size=m7i-flex.large --control-plane-count=1 --node-count=2 --node-size=t3.micro --image=ami-06571d6ae17e327ff
 ```
+<img width="1882" height="637" alt="image" src="https://github.com/user-attachments/assets/14cba679-c5ee-4ab3-9220-b603c1854e16" />
+
 ## update cluster
 ```
 kops update cluster --name rajesh33.k8s.local --yes --admin
