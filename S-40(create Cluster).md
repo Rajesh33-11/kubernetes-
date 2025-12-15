@@ -220,6 +220,11 @@ aws s3api put-bucket-versioning \
   --bucket rajesh.k8s.locals \
   --region ap-south-1 \
   --versioning-configuration Status=Enabled
+##### -Protects data from accidental deletion by keeping previous versions
+##### -Prevents data loss from overwrites by storing multiple object versions
+##### -Enables rollback and recovery, especially critical for kOps state store
+##### -Required for S3 replication (CRR / SRR) and disaster recovery
+##### -Helps with compliance and auditing by maintaining object history
 
 ### Set kOps state store environment variable
 export KOPS_STATE_STORE=s3://rajesh.k8s.locals
