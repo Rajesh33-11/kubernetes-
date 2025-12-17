@@ -27,33 +27,37 @@
 
 ### Click on New
 <img width="1518" height="485" alt="image" src="https://github.com/user-attachments/assets/493b8c53-a448-4d26-b1f1-bea19c89e0e6" />
-
-<img width="1532" height="656" alt="image" src="https://github.com/user-attachments/assets/e6d534a0-0215-439b-9f95-5f957470c446" />
+<img width="1657" height="657" alt="image" src="https://github.com/user-attachments/assets/4e029724-1cb7-43be-ad6c-4d29e3611939" />
 
 <img width="1556" height="478" alt="image" src="https://github.com/user-attachments/assets/61defb0e-5aa4-458e-a11e-88792f483a69" />
 
-<img width="1568" height="532" alt="image" src="https://github.com/user-attachments/assets/b9c1a5ad-12e4-400b-96bf-b3f36e0f824d" />
+<img width="1602" height="557" alt="image" src="https://github.com/user-attachments/assets/4d7bb07c-31fd-42d1-8e34-8a3c040e0cfc" />
 
-<img width="1585" height="406" alt="image" src="https://github.com/user-attachments/assets/57e23e86-5ca4-4381-936c-678904434049" />
+
+<img width="1572" height="442" alt="image" src="https://github.com/user-attachments/assets/a61b9b78-d5f0-4a7e-b637-3de876694f3e" />
+
 
 ### Click on create
-<img width="1916" height="922" alt="image" src="https://github.com/user-attachments/assets/710f0ffa-c33c-4ba3-9980-eab73fac272a" />
-<img width="1918" height="925" alt="image" src="https://github.com/user-attachments/assets/a1f4a8c8-9523-4804-a93b-f853404c2372" />
+<img width="1918" height="975" alt="image" src="https://github.com/user-attachments/assets/8bca52f6-d91b-46ff-941c-86e1805cfbe0" />
+<img width="1918" height="920" alt="image" src="https://github.com/user-attachments/assets/40359657-1034-42f1-819e-1bb3a997d69d" />
 
 ----
 
 ## When I change my deployment file, it will automatically replicate.
 #### Before
-<img width="756" height="287" alt="image" src="https://github.com/user-attachments/assets/f26a7ba0-b49e-4135-bc4d-eb21eab46e85" />
+<img width="911" height="298" alt="image" src="https://github.com/user-attachments/assets/224b065f-743f-405b-9bfb-5955b163e01a" />
+
 
 
 #### Before ( replicas: 7 change into   replicas: 3 )
-<img width="1192" height="601" alt="image" src="https://github.com/user-attachments/assets/6c3e1288-ba76-43a5-8b9e-f196ad52926c" />
+<img width="1272" height="660" alt="image" src="https://github.com/user-attachments/assets/79a5931b-0761-409f-80c1-6fc40ef3132e" />
+
 
 #### After
-<img width="1052" height="602" alt="image" src="https://github.com/user-attachments/assets/75cfbf87-e6d7-4bba-ae55-f68fc0bafc78" />
+<img width="960" height="591" alt="image" src="https://github.com/user-attachments/assets/41a9294a-014f-4e3f-82a8-6a78efaf9047" />
 
 #### After
-<img width="982" height="462" alt="image" src="https://github.com/user-attachments/assets/89209bf8-fd54-4877-bc0b-1ca79ac3ac6b" />
+<img width="942" height="422" alt="image" src="https://github.com/user-attachments/assets/816e168e-1d03-4938-b248-d6e1edf52597" />
+
 
 
