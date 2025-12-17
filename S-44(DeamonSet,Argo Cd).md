@@ -80,13 +80,15 @@ kubectl get po -n carrer
 Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes.
 ### Why Argo CD?¶
 Application definitions, configurations, and environments should be declarative and version controlled. Application deployment and lifecycle management should be automated, auditable, and easy to understand.
-## INSTALL HELM:
+## INSTALL HELM (HELM = apt):
 ```
 curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 
 chmod 700 get_helm.sh
 ./get_helm.sh
 helm version
 ```
+<img width="1602" height="307" alt="image" src="https://github.com/user-attachments/assets/5408c42b-e77e-417b-bf7d-2d5c52bf25ff" />
+
 ## INSTALL ARGO CD USING HELM:
 ```
 kubectl create namespace argocd
