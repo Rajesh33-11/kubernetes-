@@ -109,4 +109,11 @@ export ARGOCD_SERVER='kubectl get svc argocd-server -n argocd -o json | jq --raw
 echo $ARGOCD_SERVER
 kubectl get svc argocd-server -n argocd -o json | jq --raw-output .status.loadBalancer.ingress[0].hostname
 ```
+<img width="1572" height="337" alt="image" src="https://github.com/user-attachments/assets/d204141b-dfea-404d-bcae-6a4d3d9140fb" />
+
+--------
+## Find load balancer URL to access ARGO CD
+```
+kubectl get svc -n argocd
+```
 
