@@ -66,7 +66,7 @@ kubectl get ns
 <img width="607" height="248" alt="image" src="https://github.com/user-attachments/assets/849dd713-8633-4a5e-b893-825b67e54dec" />
 
 -----------------------------
-## Verify how many pods are running in carrier.
+## Verify how many pods are running in carrer.
 ```
 kubectl get po -n carrer
 ```
@@ -74,4 +74,8 @@ kubectl get po -n carrer
 
 --------------------------------
 
-## Verfiy List of Pods
+# Argo CD
+### What Is Argo CD?
+Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes.
+### Why Argo CD?¶
+Application definitions, configurations, and environments should be declarative and version controlled. Application deployment and lifecycle management should be automated, auditable, and easy to understand.
