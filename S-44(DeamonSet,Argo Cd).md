@@ -51,10 +51,27 @@ spec:
       targetPort: 80
 ```
 <img width="802" height="517" alt="image" src="https://github.com/user-attachments/assets/c90eaedc-0148-4b3c-bcf9-7eda8e48c5ee" />
-## run DaemonSet.yml file (create deamonset, namespace and service file)
+
+## Run the **DaemonSet.yaml** file (create the DaemonSet, Namespace, and Service files).
 ```
 kubectl create -f deamon.yml
 ```
 <img width="652" height="176" alt="image" src="https://github.com/user-attachments/assets/9659b77c-31dd-4d19-ab7b-e89314160172" />
 
 -----------------------------
+## Verify Namespace
+```
+kubectl get ns
+```
+<img width="607" height="248" alt="image" src="https://github.com/user-attachments/assets/849dd713-8633-4a5e-b893-825b67e54dec" />
+
+-----------------------------
+## Verify how many pods are running in carrier.
+```
+kubectl get po -n carrer
+```
+<img width="645" height="152" alt="image" src="https://github.com/user-attachments/assets/9fb1f854-9a97-4dde-91e5-fb13a11a0bf1" />
+
+--------------------------------
+
+## Verfiy List of Pods
