@@ -123,3 +123,18 @@ kubectl get svc -n argocd
 <img width="1915" height="990" alt="image" src="https://github.com/user-attachments/assets/5ae88ae4-fb9b-4d28-a8ac-a1cab8a74735" />
 
 -----------
+###  TO GET ARGO CD PASSWORD:
+```
+export ARGO_PWD='kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d'
+echo $ARGO_PWD
+kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
+```
+<img width="1872" height="197" alt="image" src="https://github.com/user-attachments/assets/62394520-54b3-4484-b489-831ce5b78e08" />
+
+#### User Name= admin(default)
+
+#### Password = using above command you will get
+<img width="1917" height="968" alt="image" src="https://github.com/user-attachments/assets/935f4397-bc9b-459f-b0db-0389c8c6d5c1" />
+
+-----------
+
