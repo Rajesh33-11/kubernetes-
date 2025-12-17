@@ -137,6 +137,7 @@ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.pas
 <img width="1917" height="968" alt="image" src="https://github.com/user-attachments/assets/935f4397-bc9b-459f-b0db-0389c8c6d5c1" />
 
 -----------
+# ArgoCD + Public Git Repo → Pod Creation
 ## create Deployment using Argo Cd
 
 ### Click on New
