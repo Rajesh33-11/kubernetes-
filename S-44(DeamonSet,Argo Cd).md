@@ -116,4 +116,10 @@ kubectl get svc argocd-server -n argocd -o json | jq --raw-output .status.loadBa
 ```
 kubectl get svc -n argocd
 ```
+<img width="1882" height="523" alt="image" src="https://github.com/user-attachments/assets/c8a54adb-1e70-46a5-9956-1fb39caca76f" />
 
+--------
+### Copy the load balancer URL and paste it into your browser to access Argo CD.
+<img width="1915" height="990" alt="image" src="https://github.com/user-attachments/assets/5ae88ae4-fb9b-4d28-a8ac-a1cab8a74735" />
+
+-----------
