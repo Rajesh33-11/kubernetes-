@@ -172,3 +172,46 @@ kubectl exec nginx-deployment-68845b6759-rcdqm -- printenv | grep DATABASE_URL
 <img width="1251" height="215" alt="image" src="https://github.com/user-attachments/assets/985b55f4-b140-42a2-86f6-236eff18de51" />
 
 ----------------------
+
+# Secrets:
+###  What are Secrets in Kubernetes?
+
+A **Secret** is a Kubernetes object used to **store sensitive data,** such as:
+
+---- 🔐 Passwords
+
+---- 🔐 Database credentials
+
+---- 🔐 API keys
+
+---- 🔐 Tokens, certificates
+
+👉 Secrets help you **avoid hardcoding sensitive data** inside:
+
+---- Pod YAML
+
+---- Docker images
+
+---- Source code
+
+### Why do we need Secrets?
+
+**❌ Bad practice**
+```
+password: mydbpassword123
+```
+Problems:
+
+---- Anyone with YAML access can see it
+
+---- Security risk
+
+---- Not production-ready
+
+### ✅ With Secrets
+
+---- Data is stored securely
+
+---- Access controlled via RBAC
+
+---- Mounted only where needed
