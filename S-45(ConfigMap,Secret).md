@@ -163,3 +163,12 @@ kubectl get po
 <img width="953" height="211" alt="image" src="https://github.com/user-attachments/assets/2f4006e8-0838-4793-996f-ec9ef8965857" />
 
 ----------------------
+### Print a Data Using grep command
+i want print database url
+(kubectl exec pod_id -- printenv | grep DATABASE_URL)
+```
+kubectl exec nginx-deployment-68845b6759-rcdqm -- printenv | grep DATABASE_URL
+```
+<img width="1251" height="215" alt="image" src="https://github.com/user-attachments/assets/985b55f4-b140-42a2-86f6-236eff18de51" />
+
+----------------------
