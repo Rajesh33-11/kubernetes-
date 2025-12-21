@@ -67,4 +67,5 @@ data:
   NAME: "rajesh" 
   PLACE: "hyd"
 ```
+<img width="996" height="452" alt="image" src="https://github.com/user-attachments/assets/51aec535-f476-40bd-80a8-6b9363eac089" />
 
