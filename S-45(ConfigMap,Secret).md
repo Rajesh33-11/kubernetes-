@@ -83,4 +83,69 @@ kubectl get configmap
 ```
 <img width="736" height="232" alt="image" src="https://github.com/user-attachments/assets/2974b634-7933-47e5-a26d-bb75d6b91f5f" />
 
+----------------------
 
+## Create a Deployment File (ConfigMap)
+```
+vim dep.yml
+```
+```
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+        - name: nginx
+          image: nginx:latest
+          ports:
+            - containerPort: 80
+          env:
+            - name: DATABASE_URL
+              valueFrom:
+                configMapKeyRef:
+                  name: my-config
+                  key: DATABASE_URL
+            - name: REDIS_HOST
+              valueFrom:
+                configMapKeyRef:
+                  name: my-config
+                  key: REDIS_HOST
+            - name: REDIS_PORT
+              valueFrom:
+                configMapKeyRef:
+                  name: my-config
+                  key: REDIS_PORT
+            - name: APP_MODE
+              valueFrom:
+                configMapKeyRef:
+                  name: my-config
+                  key: APP_MODE
+```
+<img width="1090" height="582" alt="image" src="https://github.com/user-attachments/assets/05835e19-7626-459a-8c60-988fb04e5152" />
+
+
+------------------------
+### Create the dep file
+```
+kubectl create -f dep.yml
+```
+<img width="817" height="141" alt="image" src="https://github.com/user-attachments/assets/6d03c992-e852-43b4-ab39-ad15890d0c58" />
+
+----------------------
+### Verify Get configmap
+```
+kubectl get configmap
+```
+<img width="736" height="232" alt="image" src="https://github.com/user-attachments/assets/2974b634-7933-47e5-a26d-bb75d6b91f5f" />
+
+----------------------
