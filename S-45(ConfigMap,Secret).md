@@ -77,7 +77,7 @@ kubectl create -f configmap.yml
 <img width="817" height="141" alt="image" src="https://github.com/user-attachments/assets/6d03c992-e852-43b4-ab39-ad15890d0c58" />
 
 ----------------------
-### Verify Get configmap
+### Verify a configmap
 ```
 kubectl get configmap
 ```
@@ -139,13 +139,27 @@ spec:
 ```
 kubectl create -f dep.yml
 ```
-<img width="817" height="141" alt="image" src="https://github.com/user-attachments/assets/6d03c992-e852-43b4-ab39-ad15890d0c58" />
+<img width="1046" height="185" alt="image" src="https://github.com/user-attachments/assets/a2b945b8-7723-425a-a444-6c885527ef4b" />
 
 ----------------------
-### Verify Get configmap
+### Verify a Deployment
 ```
-kubectl get configmap
+kubectl get deployment
 ```
-<img width="736" height="232" alt="image" src="https://github.com/user-attachments/assets/2974b634-7933-47e5-a26d-bb75d6b91f5f" />
+<img width="822" height="182" alt="image" src="https://github.com/user-attachments/assets/c0f2c169-128d-4af0-b63f-4c4a00489c68" />
+
+----------------------
+### Verify a Replicaset
+```
+kubectl get rs
+```
+<img width="806" height="142" alt="image" src="https://github.com/user-attachments/assets/cc47a28c-1016-4b53-913f-fc9809a85f27" />
+
+----------------------
+### Verify a Pods
+```
+kubectl get po
+```
+<img width="953" height="211" alt="image" src="https://github.com/user-attachments/assets/2f4006e8-0838-4793-996f-ec9ef8965857" />
 
 ----------------------
