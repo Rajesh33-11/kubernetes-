@@ -55,7 +55,7 @@ With ConfigMaps ✅:
 vim configmap.yml
 ```
 ```
-apiVersion: apps/v1
+apiVersion: v1
 kind: ConfigMap
 metadata:
   name: my-config
@@ -67,8 +67,7 @@ data:
   NAME: "rajesh" 
   PLACE: "hyd"
 ```
-<img width="958" height="368" alt="image" src="https://github.com/user-attachments/assets/6720065c-7d4c-45fc-92a9-92d3a3338c81" />
-
+<img width="1003" height="418" alt="image" src="https://github.com/user-attachments/assets/aa373758-0ad4-4f1f-b847-60a6c0c3c923" />
 
 ------------------------
 ### Create the configmap
