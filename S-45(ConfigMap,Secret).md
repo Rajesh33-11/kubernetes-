@@ -67,19 +67,20 @@ data:
   NAME: "rajesh" 
   PLACE: "hyd"
 ```
-<img width="996" height="452" alt="image" src="https://github.com/user-attachments/assets/51aec535-f476-40bd-80a8-6b9363eac089" />
+<img width="958" height="368" alt="image" src="https://github.com/user-attachments/assets/6720065c-7d4c-45fc-92a9-92d3a3338c81" />
+
 
 ------------------------
-### Create the Pod and Service Files
+### Create the configmap
 ```
-kubectl create -f pod.yaml -f service.yaml
+kubectl create -f configmap.yml
 ```
 <img width="837" height="150" alt="image" src="https://github.com/user-attachments/assets/a9ce44ae-f207-47dc-a1e6-4d19ee118574" />
 
 ----------------------
-### Verify Get both Pods and Services
+### Verify Get configmap
 ```
-kubectl get pods,svc
+kubectl get -f configmap
 ```
 <img width="1098" height="315" alt="image" src="https://github.com/user-attachments/assets/e487eb23-7fbb-426e-bce0-bf2c2d5eb95d" />
 
