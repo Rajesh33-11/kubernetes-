@@ -74,12 +74,13 @@ data:
 ```
 kubectl create -f configmap.yml
 ```
-<img width="837" height="150" alt="image" src="https://github.com/user-attachments/assets/a9ce44ae-f207-47dc-a1e6-4d19ee118574" />
+<img width="817" height="141" alt="image" src="https://github.com/user-attachments/assets/6d03c992-e852-43b4-ab39-ad15890d0c58" />
 
 ----------------------
 ### Verify Get configmap
 ```
-kubectl get -f configmap
+kubectl get configmap
 ```
-<img width="1098" height="315" alt="image" src="https://github.com/user-attachments/assets/e487eb23-7fbb-426e-bce0-bf2c2d5eb95d" />
+<img width="736" height="232" alt="image" src="https://github.com/user-attachments/assets/2974b634-7933-47e5-a26d-bb75d6b91f5f" />
+
 
