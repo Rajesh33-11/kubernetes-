@@ -56,7 +56,7 @@ vim configmap.yml
 ```
 ```
 apiVersion: apps/v1
-kind: Deployment
+kind: ConfigMap
 metadata:
   name: my-config
 data:
@@ -68,4 +68,18 @@ data:
   PLACE: "hyd"
 ```
 <img width="996" height="452" alt="image" src="https://github.com/user-attachments/assets/51aec535-f476-40bd-80a8-6b9363eac089" />
+
+------------------------
+### Create the Pod and Service Files
+```
+kubectl create -f pod.yaml -f service.yaml
+```
+<img width="837" height="150" alt="image" src="https://github.com/user-attachments/assets/a9ce44ae-f207-47dc-a1e6-4d19ee118574" />
+
+----------------------
+### Verify Get both Pods and Services
+```
+kubectl get pods,svc
+```
+<img width="1098" height="315" alt="image" src="https://github.com/user-attachments/assets/e487eb23-7fbb-426e-bce0-bf2c2d5eb95d" />
 
