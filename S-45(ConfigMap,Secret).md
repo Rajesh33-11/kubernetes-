@@ -215,3 +215,32 @@ Problems:
 ---- Access controlled via RBAC
 
 ---- Mounted only where needed
+
+----------------------------------
+
+## Create a ConfigMap File
+kubectl create secret docker-registry shammu --docker-server=https://index.docker.io/v1/ --docker-username=shammu191 --docker-password=Shammu@101 --docker-email=shaikshammu191@gmail.com
+
+
+kubectl create secret docker-registry regcred --docker-server=<your-registry-server> --docker-username=<your-name> --docker-password=<your-pword> --docker-email=<your-email>
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: private-reg-deployment
+spec:
+  replicas: 4  
+  selector:
+    matchLabels:
+      app: private-reg-app
+  template:
+    metadata:
+      labels:
+        app: private-reg-app
+    spec:
+      containers:
+      - name: private-reg-container
+        image: shammu191/shammu
+      imagePullSecrets:
+      - name: shammu
+
