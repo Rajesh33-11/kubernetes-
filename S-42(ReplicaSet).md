@@ -46,24 +46,56 @@ ReplicaSet will ensure:
 --------------------------------------
 # Create ReplicaSet in Kubernetes
 ```
+vim myrs.yml
+```
+```
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name: nginx-replicaset
+  name: myrs
+  lables:
+    app: cycle
 spec:
-  replicas: 3
+  replicas: 7
   selector:
     matchLabels:
-      app: nginx
+      app: cycle
   template:
     metadata:
       labels:
-        app: nginx
+        app: cycle
     spec:
       containers:
-      - name: nginx
-        image: nginx:latest
+      - name: con1
+        image: shammu101/cycle
         ports:
         - containerPort: 80
+-------
 
+apiVersion: v1
+kind: Service
+metadata:
+  name: mysvc
+spec:
+  type: LoadBalancer
+  selector:
+    app: cycle
+  ports:
+    - port: 80      
+      targetPort: 80 
 ```
+<img width="1312" height="625" alt="image" src="https://github.com/user-attachments/assets/8d909de6-0180-4c8b-9799-3210317d863d" />
+
+----------------------
+### Create the Pod and Service Files
+```
+kubectl create -f myrs.yaml
+```
+<img width="807" height="162" alt="image" src="https://github.com/user-attachments/assets/03ec0837-9cdf-44e3-ae79-7e425204160e" />
+
+----------------------
+### Verify Get both Pods and Services
+```
+kubectl get pods,svc
+```
+<img width="1740" height="257" alt="image" src="https://github.com/user-attachments/assets/de0dbcab-b618-4a14-89bf-69194b8df342" />
