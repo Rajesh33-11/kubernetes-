@@ -53,7 +53,7 @@ apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
   name: myrs
-  lables:
+  labels:
     app: cycle
 spec:
   replicas: 7
@@ -70,8 +70,7 @@ spec:
         image: shammu101/cycle
         ports:
         - containerPort: 80
--------
-
+---
 apiVersion: v1
 kind: Service
 metadata:
@@ -81,8 +80,8 @@ spec:
   selector:
     app: cycle
   ports:
-    - port: 80      
-      targetPort: 80 
+  - port: 80
+    targetPort: 80
 ```
 <img width="1102" height="623" alt="image" src="https://github.com/user-attachments/assets/6b02fa33-664f-4bfa-8d78-349cff1d62ae" />
 
