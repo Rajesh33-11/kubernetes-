@@ -91,11 +91,12 @@ spec:
 ```
 kubectl create -f myrs.yml
 ```
-<img width="807" height="162" alt="image" src="https://github.com/user-attachments/assets/03ec0837-9cdf-44e3-ae79-7e425204160e" />
+<img width="827" height="171" alt="image" src="https://github.com/user-attachments/assets/2a41f509-e040-42d1-9a10-4cd982a9b403" />
 
 ----------------------
 ### Verify Get both Pods and Services
 ```
 kubectl get pods,svc
 ```
-<img width="1740" height="257" alt="image" src="https://github.com/user-attachments/assets/de0dbcab-b618-4a14-89bf-69194b8df342" />
+<img width="1731" height="396" alt="image" src="https://github.com/user-attachments/assets/8388b7ab-cd7f-42ac-99c0-c40fc2d9e7ed" />
+
