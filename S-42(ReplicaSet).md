@@ -52,7 +52,7 @@ vim myrs.yml
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name: myrs
+  name: myrs1
   labels:
     app: cycle
 spec:
@@ -74,7 +74,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: mysvc
+  name: mysvc1
 spec:
   type: LoadBalancer
   selector:
