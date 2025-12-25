@@ -84,12 +84,13 @@ spec:
     - port: 80      
       targetPort: 80 
 ```
-<img width="1312" height="625" alt="image" src="https://github.com/user-attachments/assets/8d909de6-0180-4c8b-9799-3210317d863d" />
+<img width="1102" height="623" alt="image" src="https://github.com/user-attachments/assets/6b02fa33-664f-4bfa-8d78-349cff1d62ae" />
+
 
 ----------------------
 ### Create the Pod and Service Files
 ```
-kubectl create -f myrs.yaml
+kubectl create -f myrs.yml
 ```
 <img width="807" height="162" alt="image" src="https://github.com/user-attachments/assets/03ec0837-9cdf-44e3-ae79-7e425204160e" />
 
