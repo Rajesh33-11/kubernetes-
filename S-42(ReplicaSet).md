@@ -44,4 +44,26 @@ ReplicaSet will ensure:
 🎯 It **strictly maintains the desired number of Pods**
 
 --------------------------------------
+# Create ReplicaSet in Kubernetes
+```
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: nginx-replicaset
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:latest
+        ports:
+        - containerPort: 80
 
+```
