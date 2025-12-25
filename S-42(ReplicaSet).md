@@ -108,4 +108,9 @@ kubectl delete pod --all
 
 <img width="721" height="631" alt="image" src="https://github.com/user-attachments/assets/9c76c6a1-d47b-4cc9-931b-bf86f75958a9" />
 
+----------------------
+
+<img width="1918" height="917" alt="image" src="https://github.com/user-attachments/assets/8b693153-d68f-48a5-bba7-cf8dabe17c4e" />
+
+
 
