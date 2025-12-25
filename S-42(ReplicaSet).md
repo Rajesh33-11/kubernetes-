@@ -100,3 +100,12 @@ kubectl get pods,svc
 ```
 <img width="1731" height="396" alt="image" src="https://github.com/user-attachments/assets/8388b7ab-cd7f-42ac-99c0-c40fc2d9e7ed" />
 
+----------------------
+### Delete the Pod and verify whether it is recreated automatically.
+```
+kubectl delete pod --all
+```
+
+<img width="721" height="631" alt="image" src="https://github.com/user-attachments/assets/9c76c6a1-d47b-4cc9-931b-bf86f75958a9" />
+
+
