@@ -64,12 +64,58 @@ Used to identify which pods belong to this controller
 
 **--- template**
 
-Pod definition (image, container name, ports, etc.)
+________________
 
+## What Happens If a Pod Is Deleted?
 
+Let’s say you manually delete a pod:
+```
+kubectl delete pod <pod-name>
+```
 
+**What happens next?**
 
+ReplicationController immediately detects the pod count is reduced
 
+It **creates a new pod automatically**
+
+No manual work. Kubernetes handles it for you.
+
+________________
+
+## Scaling Pods Using ReplicationController
+
+You can increase or decrease pod count easily.
+
+Using command line:
+```
+kubectl scale rc my-rc --replicas=5
+```
+
+This will scale your application from 3 pods to 5 pods.
+________________
+
+### Limitations of ReplicationController
+
+This is important to understand.
+
+--- It does not support rolling updates
+
+--- Selector options are very limited
+
+--- It is considered legacy now
+
+Because of these limitations, ReplicationController is **rarely used in modern Kubernetes setups.**
+
+### What Do We Use Instead?
+
+In today’s real-world projects:
+
+--- Deployment is used
+
+--- Deployment internally manages ReplicaSets
+
+--- ReplicaSets are the improved version of ReplicationController
 _________________________
 
 
