@@ -159,7 +159,7 @@ spec:
 
 --------------------------------------
 
-## What is a ReplicaSet in Kubernetes (K8s)?
+# What is a ReplicaSet in Kubernetes (K8s)?
 
 A **ReplicaSet** is a Kubernetes object that ****ensures a specified number of identical Pods are always running.**
 
