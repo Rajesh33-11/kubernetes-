@@ -117,9 +117,47 @@ In today’s real-world projects:
 
 --- ReplicaSets are the improved version of ReplicationController
 _________________________
+# Create ReplicationController in Kubernetes
+```
+vim myrc.yml
+```
+```
+apiVersion: apps/v1
+kind: ReplicationController
+metadata:
+  name: myrc1
+  labels:
+    app: cycle
+spec:
+  replicas: 7
+  selector:
+      app: cycle
+  template:
+    metadata:
+      labels:
+        app: cycle
+    spec:
+      containers:
+      - name: con1
+        image: shammu101/cycle
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mysvc1
+spec:
+  type: LoadBalancer
+  selector:
+    app: cycle
+  ports:
+  - port: 80
+    targetPort: 80
+```
 
 
-
+--------------------------------------
 
 ## What is a ReplicaSet in Kubernetes (K8s)?
 
