@@ -122,7 +122,7 @@ _________________________
 vim myrc.yml
 ```
 ```
-apiVersion: apps/v1
+apiVersion: v1
 kind: ReplicationController
 metadata:
   name: myrc1
