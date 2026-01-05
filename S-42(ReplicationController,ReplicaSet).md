@@ -177,6 +177,8 @@ kubectl get rc
 kubectl get pods,svc
 ```
 <img width="1796" height="607" alt="image" src="https://github.com/user-attachments/assets/5497dd8e-de56-4a53-9012-2039aef4e318" />
+<img width="1918" height="1040" alt="image" src="https://github.com/user-attachments/assets/1364321f-e150-4620-9cc3-3d4cfeb9bb0d" />
+
 
 --------------------------------------
 
