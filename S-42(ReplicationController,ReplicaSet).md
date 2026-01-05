@@ -165,9 +165,9 @@ kubectl create -f myrc.yml
 <img width="792" height="182" alt="image" src="https://github.com/user-attachments/assets/331a8ebb-c1fc-4cd5-b51c-4b684304dc4a" />
 
 --------------------------------------
-### Verify 
+### Verify ReplicationController 
 ```
-kubectl get pods,svc
+kubectl get rc
 ```
 --------------------------------------
 
