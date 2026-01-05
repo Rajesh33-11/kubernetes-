@@ -165,6 +165,18 @@ kubectl create -f myrc.yml
 <img width="792" height="182" alt="image" src="https://github.com/user-attachments/assets/331a8ebb-c1fc-4cd5-b51c-4b684304dc4a" />
 
 --------------------------------------
+### Verify 
+```
+kubectl get pods,svc
+```
+--------------------------------------
+
+--------------------------------------
+### Verify Get both Pods and Services
+```
+kubectl get pods,svc
+```
+--------------------------------------
 
 # What is a ReplicaSet in Kubernetes (K8s)?
 
