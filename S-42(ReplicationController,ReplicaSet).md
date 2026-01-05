@@ -169,7 +169,7 @@ kubectl create -f myrc.yml
 ```
 kubectl get rc
 ```
---------------------------------------
+<img width="518" height="142" alt="image" src="https://github.com/user-attachments/assets/b3a587ea-e042-4c0f-bc02-6b749d22e2a3" />
 
 --------------------------------------
 ### Verify Get both Pods and Services
