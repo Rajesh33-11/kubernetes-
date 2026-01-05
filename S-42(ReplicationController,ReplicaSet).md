@@ -176,6 +176,8 @@ kubectl get rc
 ```
 kubectl get pods,svc
 ```
+<img width="1796" height="607" alt="image" src="https://github.com/user-attachments/assets/5497dd8e-de56-4a53-9012-2039aef4e318" />
+
 --------------------------------------
 
 # What is a ReplicaSet in Kubernetes (K8s)?
