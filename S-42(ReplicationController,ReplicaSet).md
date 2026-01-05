@@ -155,8 +155,13 @@ spec:
   - port: 80
     targetPort: 80
 ```
+<img width="961" height="572" alt="image" src="https://github.com/user-attachments/assets/5e91ef73-6d83-4bb4-a0e4-d4bf9ddd7044" />
 
-
+--------------------------------------
+### Create the Pod and Service Files
+```
+kubectl create -f myrc.yml
+```
 --------------------------------------
 
 # What is a ReplicaSet in Kubernetes (K8s)?
