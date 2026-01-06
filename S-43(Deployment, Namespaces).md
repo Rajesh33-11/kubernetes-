@@ -73,84 +73,75 @@ spec:
         - containerPort: 80
 ```
 
-Explanation (Very Simple)
-1. apiVersion & kind
+----------------------
+Explanation 
+## 1. apiVersion & kind
+```
 apiVersion: apps/v1
 kind: Deployment
-
+```
 Tells Kubernetes:
 
-“I want to create a Deployment object.”
+**“I want to create a Deployment object.”**
 
-
-2. metadata
+----------------------
+## 2. metadata
+```
 metadata:
   name: nginx-deployment
+```
+* Name of the Deployment
+* Used for identification and management
 
-
-
-Name of the Deployment
-
-
-Used for identification and management
-
-
-
-3. replicas
+----------------------
+## 3. replicas
+```
 replicas: 3
-
-
-
-Number of pod copies you want
-
-
-Kubernetes ensures 3 pods are always running
-
-
-
-4. selector
+```
+* Number of pod copies you want
+* Kubernetes ensures 3 pods are always running
+----------------------
+## 4. selector
+```
 selector:
   matchLabels:
     app: nginx
+```
+* Deployment uses this to identify which pods it manages
+* Must match pod labels exactly
+--Selector and pod labels must match, otherwise Deployment won’t work correctly.
 
-
-
-Deployment uses this to identify which pods it manages
-
-
-Must match pod labels exactly
-
-
-⚠️ Selector and pod labels must match, otherwise Deployment won’t work correctly.
-
-5. template
+----------------------
+## 5. template
 This is the pod definition.
 Whatever you put here is what Kubernetes runs as a pod.
+```
 template:
   metadata:
     labels:
       app: nginx
-
+```
 Labels used by Deployment and Service.
+```
 spec:
   containers:
   - name: nginx
     image: nginx
-
+```
 Defines the container and image.
 
-How Deployment Works Internally
-This is very important 👇
+----------------------
+## How Deployment Works Internally
+#### This is very important :
 When you create a Deployment:
 
-
-Deployment creates a ReplicaSet
-
-
-ReplicaSet creates Pods
+* Deployment creates a ReplicaSet
 
 
-Deployment monitors ReplicaSet and Pods
+* ReplicaSet creates Pods
+
+
+* Deployment monitors ReplicaSet and Pods
 
 
 Flow:
