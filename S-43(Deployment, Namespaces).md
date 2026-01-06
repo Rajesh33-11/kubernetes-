@@ -468,3 +468,13 @@ kind: Namespace
 matadata:
   name: Prod-env
 ```
+<img width="636" height="281" alt="image" src="https://github.com/user-attachments/assets/1fbd6567-ddee-4d0a-b229-c39f32f889d4" />
+
+```
+kubectl create -f ns.yml
+```
+<img width="675" height="398" alt="image" src="https://github.com/user-attachments/assets/9924ef2a-fded-4104-9fac-e78fc044ab01" />
+
+---------------------
+
+
