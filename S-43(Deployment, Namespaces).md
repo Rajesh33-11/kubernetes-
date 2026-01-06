@@ -310,3 +310,25 @@ kubectl set image deployment/mydep51 cont1=shammu101/dm
 <img width="1918" height="1017" alt="image" src="https://github.com/user-attachments/assets/80bb239e-a6aa-46f8-bb51-6542eb8ab733" />
 <img width="1918" height="983" alt="image" src="https://github.com/user-attachments/assets/1df10461-774d-4b93-b1f9-ff2be29afb10" />
 
+----------------------
+### I want to RollOut Before Version
+check history
+```
+kubectl rollout history deployment/mydep51 
+```
+<img width="837" height="236" alt="image" src="https://github.com/user-attachments/assets/4c318e34-3704-4b07-8e97-9655c505551b" />
+
+**Now rollout Before Version**
+```
+kubectl rollout undo deployment/mydep51 --to-revision=1
+```
+<img width="1041" height="161" alt="image" src="https://github.com/user-attachments/assets/5e83b636-dc13-4ef3-8602-6a94a75f05a9" />
+<img width="1918" height="983" alt="image" src="https://github.com/user-attachments/assets/39b36d04-0ee5-4d5f-8e2d-305b1b9fae9a" />
+<img width="1918" height="1002" alt="image" src="https://github.com/user-attachments/assets/1a3d351e-e94e-44f1-bc7f-8703ddf8fc55" />
+
+---------------------------------
+
+
+
+
+
