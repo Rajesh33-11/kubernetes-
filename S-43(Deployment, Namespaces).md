@@ -302,4 +302,8 @@ kubectl rs
 <img width="1918" height="1017" alt="image" src="https://github.com/user-attachments/assets/c0175e59-42bc-4733-bc6d-c457103d0b45" />
 
 --------------------------------------
-
+### I want to Replace image Cycle to dm 
+kubectl set image deployment/<deployment_name> <container_name>=<image_name>
+```
+kubectl set image deployment/mydep51 cont1=shammu101/dm
+```
