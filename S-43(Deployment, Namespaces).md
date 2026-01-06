@@ -449,3 +449,22 @@ kubectl get ns
 <img width="683" height="250" alt="image" src="https://github.com/user-attachments/assets/c4c55bae-843d-4c87-a4f9-69b79bb7db20"  
 
 ---------------------
+### Name Spaces can be created in Two Ways
+**1.Through Commands
+2.Through Files**
+### 1.Through Commands
+```
+kubectl create ns dev-env
+```
+<img width="1005" height="531" alt="image" src="https://github.com/user-attachments/assets/db8ca23b-ab1a-4a71-97df-54172b5953b0" />
+
+### 2.Through files
+```
+vim ns.yml
+```
+```
+apiVersion: apps/v1
+kind: Namespace
+matadata:
+  name: Prod-env
+```
