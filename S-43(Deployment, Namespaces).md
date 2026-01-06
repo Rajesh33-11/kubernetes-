@@ -327,8 +327,117 @@ kubectl rollout undo deployment/mydep51 --to-revision=1
 <img width="1918" height="1002" alt="image" src="https://github.com/user-attachments/assets/1a3d351e-e94e-44f1-bc7f-8703ddf8fc55" />
 
 ---------------------------------
+# Kubernetes Namespaces
 
+### Kubernetes Namespaces 
 
+In Kubernetes, a **Namespace** is used to **logically divide a cluster** into multiple virtual sections.
 
+In simple words:
 
+Namespaces help you organize, isolate, and manage resources inside the same Kubernetes cluster.
+
+They don’t create new clusters — they just **separate resources within one cluster.**
+
+---------------------------------
+
+### Why Do We Need Namespaces?
+
+Imagine you have **one Kubernetes cluster** and multiple teams or environments using it.
+
+Without namespaces:
+
+* Everything goes into one place
+
+* Resource names clash
+
+* Hard to manage access
+
+* No clear separation
+
+Namespaces solve this problem.
+
+---------------------------------
+### Real-World Use Cases
+
+Namespaces are commonly used for:
+
+### * Environment separation
+
+   * dev
+
+   * test
+
+   * uat
+
+   * prod
+
+### * Team separation
+
+   * frontend team
+
+   * backend team
+
+   * devops team
+
+### * Access control
+
+* Different permissions for different teams
+
+---------------------------------
+# Namespace Isolation – What Is Isolated?
+Namespaces provide isolation for:
+
+* Pods
+
+* Services
+
+* Deployments
+
+* ConfigMaps
+
+* Secrets
+
+Example:
+
+* Pod named nginx can exist in **dev** and **prod** namespaces at the same time
+
+---------------------------------
+
+# What Is NOT Namespaced?
+
+Some resources are **cluster-wide:**
+
+* Nodes
+
+* PersistentVolumes
+
+* Namespaces themselves
+
+* ClusterRoles
+
+You cannot restrict these to a namespace.
+
+---------------------
+# When to Use Namespaces
+
+Use namespaces when:
+
+* You have multiple environments
+
+* Multiple teams share a cluster
+
+* You want better organization
+
+* You need access control and quotas
+---------------------------
+# When NOT to Overuse Namespaces
+
+* Don’t create namespaces for every small app
+
+* Use them logically (env, team, purpose)
+
+------------------------
+
+**A namespace is a logical partition in Kubernetes used to organize, isolate, and manage resources within the same cluster.**
 
