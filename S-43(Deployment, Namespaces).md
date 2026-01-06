@@ -295,7 +295,11 @@ kubectl get pods,svc
 ```
 kubectl rs
 ```
-<img width="710" height="191" alt="image" src="https://github.com/user-attachments/assets/0914f261-5225-4200-8cb2-c6e80dc020fc" 
-  
+<img width="710" height="191" alt="image" src="https://github.com/user-attachments/assets/0bb9760a-2fe7-4ba3-b771-34e7c69bbe52" />
+
 --------------------------------------
-### Verify ReplicaSet
+### Pod Access from Internet
+<img width="1918" height="1017" alt="image" src="https://github.com/user-attachments/assets/c0175e59-42bc-4733-bc6d-c457103d0b45" />
+
+--------------------------------------
+
