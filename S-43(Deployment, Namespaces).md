@@ -307,3 +307,6 @@ kubectl set image deployment/<deployment_name> <container_name>=<image_name>
 ```
 kubectl set image deployment/mydep51 cont1=shammu101/dm
 ```
+<img width="1918" height="1017" alt="image" src="https://github.com/user-attachments/assets/80bb239e-a6aa-46f8-bb51-6542eb8ab733" />
+<img width="1918" height="983" alt="image" src="https://github.com/user-attachments/assets/1df10461-774d-4b93-b1f9-ff2be29afb10" />
+
