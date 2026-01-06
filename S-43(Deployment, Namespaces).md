@@ -446,7 +446,7 @@ Use namespaces when:
 ```
 kubectl get ns
 ```
-<img width="683" height="250" alt="image" src="https://github.com/user-attachments/assets/c4c55bae-843d-4c87-a4f9-69b79bb7db20"  
+<img width="683" height="250" alt="image" src="https://github.com/user-attachments/assets/c4c55bae-843d-4c87-a4f9-69b79bb7db20" />  
 
 ---------------------
 ### Name Spaces can be created in Two Ways
