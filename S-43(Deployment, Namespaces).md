@@ -266,4 +266,8 @@ spec:
       targetPort: 80
       nodePort: 31000
 ```
+<img width="1470" height="783" alt="image" src="https://github.com/user-attachments/assets/fc8e6f13-76d5-4203-8761-a791188a9870" />
+
+---------------------
+
 
