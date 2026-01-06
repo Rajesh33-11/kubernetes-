@@ -135,136 +135,94 @@ Defines the container and image.
 #### This is very important :
 When you create a Deployment:
 
-* Deployment creates a ReplicaSet
+* Deployment creates a **ReplicaSet**
 
 
-* ReplicaSet creates Pods
+* ReplicaSet creates **Pods**
 
 
 * Deployment monitors ReplicaSet and Pods
 
-
 Flow:
-Deployment → ReplicaSet → Pods
+
+**Deployment → ReplicaSet → Pods**
 
 You interact with Deployment, not ReplicaSet directly.
 
-Rolling Updates (Biggest Advantage)
-Let’s say you update the image:
-image: nginx:1.25
+----------------------
 
+## Rolling Updates - Biggest Advantage
+Let’s say you update the image:
+```
+image: nginx:1.25
+```
 Deployment will:
 
+* Create a new ReplicaSet
+* Gradually bring up new pods
+* Slowly terminate old pods
+* Ensure **no downtime**
 
-Create a new ReplicaSet
+This is called **a rolling update.**
 
+----------------------
 
-Gradually bring up new pods
-
-
-Slowly terminate old pods
-
-
-Ensure no downtime
-
-
-This is called a rolling update.
-
-Rollback Feature (Life Saver)
+## Rollback Feature (Life Saver)
 If something goes wrong after deployment:
+```
 kubectl rollout undo deployment nginx-deployment
-
-Boom 💥
-Kubernetes rolls back to the previous stable version.
+```
+**Kubernetes rolls back to the previous stable version.**
 This is something:
+ReplicaSet,ReplicationController **cannot do.**
 
+----------------------
 
-ReplicaSet ❌
-
-
-ReplicationController ❌
-cannot do.
-
-
-
-Scaling Deployment
+## Scaling Deployment
 You can scale easily.
 Using YAML:
+```
 replicas: 5
+```
+**No downtime, no stress.**
 
-Using CLI:
-kubectl scale deployment nginx-deployment --replicas=5
+----------------------
 
-No downtime, no stress.
-
-Checking Deployment Status
+## Checking Deployment Status
 Useful commands:
+```
 kubectl get deployment
 kubectl describe deployment nginx-deployment
 kubectl rollout status deployment nginx-deployment
 kubectl rollout history deployment nginx-deployment
+```
 
+----------------------
 
-Deployment Strategies
+## Deployment Strategies
 By default, Deployment uses:
 
-
-RollingUpdate (most common)
-
+***RollingUpdate** (most common)
 
 Other option:
-
-
-Recreate (delete old pods first, then create new ones)
-
+***Recreate** (delete old pods first, then create new ones)
 
 RollingUpdate is what we use in almost all cases.
 
-When to Use Deployment
+
+----------------------
+
+## When to Use Deployment
 Use Deployment when:
 
+* Running stateless applications
+* Building web apps or APIs
+* Need zero-downtime updates
+* Want rollback capability
 
-Running stateless applications
+ Basically, **99% of applications use Deployment.**
 
-
-Building web apps or APIs
-
-
-Need zero-downtime updates
-
-
-Want rollback capability
-
-
-👉 Basically, 99% of applications use Deployment.
-
-Interview One-Liner 🎯
-
+---------------------
 Deployment is a higher-level Kubernetes object that manages ReplicaSets and provides rolling updates, rollback, and scaling with zero downtime.
+----------------------
 
-
-Mentor Advice 👨‍🏫
-
-
-Learn Deployment deeply — it’s core Kubernetes
-
-
-RC and RS are important for understanding evolution
-
-
-In real projects, always use Deployment + Service
-
-
-If you want next, I can:
-
-
-Add Service with Deployment (single YAML)
-
-
-Explain rolling update strategy step-by-step
-
-
-Compare Deployment vs StatefulSet vs DaemonSet
-
-
-Just say the word buddy 👍
