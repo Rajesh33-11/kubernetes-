@@ -225,4 +225,47 @@ Use Deployment when:
 ---------------------
 Deployment is a higher-level Kubernetes object that manages ReplicaSets and provides rolling updates, rollback, and scaling with zero downtime.
 ----------------------
+# Create ReplicationController in Kubernetes
+```
+vim dep.yml
+```
+```
+
+```
+apiVersion: apps/v1
+kind: Deployment
+matadata:
+  name: mydep11
+  labels:
+    app: cycle
+spec:
+  replicas: 9
+  selector:
+    matchLabels:
+      app: cycle
+  template:
+    metadata:
+      labels:
+        app: cycle
+    spec:
+      containers:
+        - name: cont1
+          image: shammu101/cycle
+          ports:
+            - containerPort: 80
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mysvc33 
+spec:
+  type: NodePort
+  selector:
+    app: cycle
+  ports:
+    - port: 80
+      targetPort: 80
+      nodePort: 31000
+```
 
