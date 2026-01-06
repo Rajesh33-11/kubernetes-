@@ -269,5 +269,29 @@ spec:
 <img width="1470" height="783" alt="image" src="https://github.com/user-attachments/assets/fc8e6f13-76d5-4203-8761-a791188a9870" />
 
 ---------------------
+### Create the Pod and Service Files
+```
+kubectl create -f dep.yml
+```
+<img width="940" height="170" alt="image" src="https://github.com/user-attachments/assets/a58553b5-c07f-446f-b1f2-eb6934f469ba" />
 
 
+--------------------------------------
+### Verify Deployment created or Not
+```
+kubectl get deployment
+```
+<img width="806" height="167" alt="image" src="https://github.com/user-attachments/assets/4892e822-44a4-4353-8ab8-3047cba74599" />
+
+--------------------------------------
+### Verify Get both Pods and Services
+```
+kubectl get pods,svc
+```
+<img width="1088" height="413" alt="image" src="https://github.com/user-attachments/assets/f000d097-c6b8-4e9d-a6ac-fb02d0b4dd71" />
+
+--------------------------------------
+### Verify ReplicaSet
+```
+kubectl rs
+```
