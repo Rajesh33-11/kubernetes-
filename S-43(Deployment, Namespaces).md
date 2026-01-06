@@ -225,12 +225,10 @@ Use Deployment when:
 ---------------------
 Deployment is a higher-level Kubernetes object that manages ReplicaSets and provides rolling updates, rollback, and scaling with zero downtime.
 ----------------------
-# Create ReplicationController in Kubernetes
+# Create Deployment in Kubernetes
 ```
 vim dep.yml
 ```
-```
-
 ```
 apiVersion: apps/v1
 kind: Deployment
