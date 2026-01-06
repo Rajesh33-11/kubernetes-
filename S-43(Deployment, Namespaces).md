@@ -295,3 +295,7 @@ kubectl get pods,svc
 ```
 kubectl rs
 ```
+<img width="710" height="191" alt="image" src="https://github.com/user-attachments/assets/0914f261-5225-4200-8cb2-c6e80dc020fc" 
+  
+--------------------------------------
+### Verify ReplicaSet
