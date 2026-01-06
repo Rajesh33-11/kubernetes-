@@ -441,3 +441,11 @@ Use namespaces when:
 
 **A namespace is a logical partition in Kubernetes used to organize, isolate, and manage resources within the same cluster.**
 
+-------------
+### To verify Name Spaces
+```
+kubectl get ns
+```
+<img width="683" height="250" alt="image" src="https://github.com/user-attachments/assets/c4c55bae-843d-4c87-a4f9-69b79bb7db20"  
+
+---------------------
