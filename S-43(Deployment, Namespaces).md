@@ -385,7 +385,7 @@ Namespaces are commonly used for:
 * Different permissions for different teams
 
 ---------------------------------
-# Namespace Isolation – What Is Isolated?
+### Namespace Isolation – What Is Isolated?
 Namespaces provide isolation for:
 
 * Pods
@@ -404,7 +404,7 @@ Example:
 
 ---------------------------------
 
-# What Is NOT Namespaced?
+### What Is NOT Namespaced?
 
 Some resources are **cluster-wide:**
 
@@ -419,7 +419,7 @@ Some resources are **cluster-wide:**
 You cannot restrict these to a namespace.
 
 ---------------------
-# When to Use Namespaces
+### When to Use Namespaces
 
 Use namespaces when:
 
@@ -431,7 +431,7 @@ Use namespaces when:
 
 * You need access control and quotas
 ---------------------------
-# When NOT to Overuse Namespaces
+### When NOT to Overuse Namespaces
 
 * Don’t create namespaces for every small app
 
