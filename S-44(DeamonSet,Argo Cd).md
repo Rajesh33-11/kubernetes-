@@ -72,37 +72,37 @@ DaemonSet follows a simple rule:
 10 nodes → 10 pods
 
 If a new node joins the cluster:
-➡ DaemonSet automatically deploys a pod on that node.
+=> DaemonSet automatically deploys a pod on that node.
 
-Basic DaemonSet YAML File
-apiVersion: apps/v1
-kind: DaemonSet
-metadata:
-  name: nginx-daemonset
-spec:
-  selector:
-    matchLabels:
-      app: nginx
-  template:
-    metadata:
-      labels:
-        app: nginx
-    spec:
-      containers:
-      - name: nginx
-        image: nginx
-        ports:
-        - containerPort: 80
+**DaemonSet automatically decides pod count based on number of nodes.**
 
-Explanation (Very Simple)
-1. No replicas field
+---------------------------------
+## What Happens When Nodes Change?
+* Cluster has 3 nodes → 3 pods
 
-You’ll notice:
-❌ No replicas field
+* New node added → 4th pod created automatically
 
-That’s because:
+* One node removed → corresponding pod deleted
+---------------------------------
+## When to Use DaemonSet
 
-DaemonSet automatically decides pod count based on number of nodes.
+**Use DaemonSet when:**
+
+* You need one pod per node
+* The app is node-specific
+* The service supports the entire cluster
+
+**Do NOT use DaemonSet for:**
+
+* Web applications
+
+* APIs
+
+* Stateless business apps
+
+### Those belong to Deployments.
+
+---------------------------------------
 ## Verfiy List of Pods
 ```
 kubectl get Pods
