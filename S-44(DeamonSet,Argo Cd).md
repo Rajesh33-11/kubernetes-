@@ -1,7 +1,6 @@
-# DeamonSet
-DaemonSet in Kubernetes – Easy & Practical Notes
+# DaemonSet in Kubernetes 
 
-A DaemonSet is a Kubernetes object used to run exactly one pod on every node (or selected nodes) in the cluster.
+A **DaemonSet** is a Kubernetes object used to run exactly one pod on every node (or selected nodes) in the cluster.
 
 In simple words:
 
@@ -9,57 +8,60 @@ If a node exists, a DaemonSet ensures a pod is running on that node.
 
 Whenever:
 
-A new node is added → pod is automatically created
+* A new node is added → pod is automatically created
 
-A node is removed → pod is automatically removed
+* A node is removed → pod is automatically removed
 
 You don’t manage pod count manually here — Kubernetes handles it.
 
-Why Do We Need DaemonSet?
+-------------------
+## Why Do We Need DaemonSet?
 
-Some applications must run on every node, not just a few pods.
+Some applications must run on **every node,** not just a few pods.
 
 Examples:
 
-Log collection
+* Log collection
 
-Monitoring agents
+* Monitoring agents
 
-Security agents
+* Security agents
 
-Network plugins
+* Network plugins
 
-Running these as Deployments doesn’t make sense — we need one pod per node, and that’s exactly what DaemonSet provides.
+Running these as Deployments doesn’t make sense — we need **one pod per node,** and that’s exactly what DaemonSet provides.
 
-Real-World Use Cases
+-------------------
+## Real-World Use Cases
 
 DaemonSets are commonly used for cluster-level services, such as:
 
-Log collectors
+* **Log collectors**
 
-Fluentd
+   * Fluentd
 
-Filebeat
+   * Filebeat
 
-Monitoring agents
+* **Monitoring agents**
 
-Node Exporter
+   * Node Exporter
 
-Datadog agent
+   * Datadog agent
 
-Networking components
+* **Networking components**
 
-CNI plugins
+   * CNI plugins
 
-kube-proxy
+   * kube-proxy
 
-Security agents
+* **Security agents**
 
-Antivirus
+   * Antivirus
 
-Compliance scanners
+   * Compliance scanners
 
-How DaemonSet Works
+-------------------
+## How DaemonSet Works
 
 DaemonSet follows a simple rule:
 
