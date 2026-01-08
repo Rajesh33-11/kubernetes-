@@ -1,4 +1,106 @@
 # DeamonSet
+DaemonSet in Kubernetes – Easy & Practical Notes
+
+A DaemonSet is a Kubernetes object used to run exactly one pod on every node (or selected nodes) in the cluster.
+
+In simple words:
+
+If a node exists, a DaemonSet ensures a pod is running on that node.
+
+Whenever:
+
+A new node is added → pod is automatically created
+
+A node is removed → pod is automatically removed
+
+You don’t manage pod count manually here — Kubernetes handles it.
+
+Why Do We Need DaemonSet?
+
+Some applications must run on every node, not just a few pods.
+
+Examples:
+
+Log collection
+
+Monitoring agents
+
+Security agents
+
+Network plugins
+
+Running these as Deployments doesn’t make sense — we need one pod per node, and that’s exactly what DaemonSet provides.
+
+Real-World Use Cases
+
+DaemonSets are commonly used for cluster-level services, such as:
+
+Log collectors
+
+Fluentd
+
+Filebeat
+
+Monitoring agents
+
+Node Exporter
+
+Datadog agent
+
+Networking components
+
+CNI plugins
+
+kube-proxy
+
+Security agents
+
+Antivirus
+
+Compliance scanners
+
+How DaemonSet Works
+
+DaemonSet follows a simple rule:
+
+1 node → 1 pod
+
+5 nodes → 5 pods
+
+10 nodes → 10 pods
+
+If a new node joins the cluster:
+➡ DaemonSet automatically deploys a pod on that node.
+
+Basic DaemonSet YAML File
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: nginx-daemonset
+spec:
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx
+        ports:
+        - containerPort: 80
+
+Explanation (Very Simple)
+1. No replicas field
+
+You’ll notice:
+❌ No replicas field
+
+That’s because:
+
+DaemonSet automatically decides pod count based on number of nodes.
 ## Verfiy List of Pods
 ```
 kubectl get Pods
