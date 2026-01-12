@@ -232,7 +232,7 @@ vim dep.yml
 ```
 apiVersion: apps/v1
 kind: Deployment
-matadata:
+metadata:
   name: mydep11
   labels:
     app: cycle
