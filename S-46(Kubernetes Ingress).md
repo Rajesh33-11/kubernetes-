@@ -106,3 +106,4 @@ Then NodePort or LoadBalancer is fine.
 **Ingress is a Kubernetes resource used to expose multiple services externally using HTTP/HTTPS with domain and path-based routing.**
 
 --------------------------------------
+<img width="1115" height="732" alt="image" src="https://github.com/user-attachments/assets/07c03557-e8bc-40d2-be56-35e25bbc4522" />
