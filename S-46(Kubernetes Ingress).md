@@ -120,4 +120,75 @@ kubectl create -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/con
 ```
 vim dep.yml
 ```
+apiVersion: apps/v1
+kind: Deployment
+matadata:
+  name: mydep12
+  labels:
+    app: dm
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: dm
+  template:
+    metadata:
+      labels:
+        app: dm
+    spec:
+      containers:
+        - name: cont12
+          image: shammu101/dm
+          ports:
+            - containerPort: 80
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mysvc33 
+spec:
+  type: NodePort
+  selector:
+    app: dm
+  ports:
+    - port: 80
+      targetPort: 80
+      nodePort: 31000
+---
+apiVersion: apps/v1
+kind: Deployment
+matadata:
+  name: mydep11
+  labels:
+    app: cycle
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: cycle
+  template:
+    metadata:
+      labels:
+        app: cycle
+    spec:
+      containers:
+        - name: cont1
+          image: shammu101/cycle
+          ports:
+            - containerPort: 80
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mysvc44 
+spec:
+  type: NodePort
+  selector:
+    app: cycle
+  ports:
+    - port: 80
+      targetPort: 80
+      nodePort: 32000
 ```
