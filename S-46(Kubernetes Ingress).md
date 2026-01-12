@@ -114,3 +114,10 @@ Then NodePort or LoadBalancer is fine.
 kubectl create -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.2.1/deploy/static/provider/cloud/deploy.yaml
 ```
 <img width="1857" height="537" alt="image" src="https://github.com/user-attachments/assets/0b7cbf81-30a5-454e-8903-7041fc0ea3c6" />
+
+----------------------------------------
+## Create Pods
+```
+vim dep.yml
+```
+```
