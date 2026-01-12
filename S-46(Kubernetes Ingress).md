@@ -123,7 +123,7 @@ vim dep.yml
 ```
 apiVersion: apps/v1
 kind: Deployment
-matadata:
+metadata:
   name: mydep12
   labels:
     app: dm
@@ -139,7 +139,7 @@ spec:
     spec:
       containers:
         - name: cont12
-          image: shammu101/dm
+          image: shammu101/dm:latest
           ports:
             - containerPort: 80
 
@@ -156,10 +156,11 @@ spec:
     - port: 80
       targetPort: 80
       nodePort: 31000
+
 ---
 apiVersion: apps/v1
 kind: Deployment
-matadata:
+metadata:
   name: mydep11
   labels:
     app: cycle
@@ -175,7 +176,7 @@ spec:
     spec:
       containers:
         - name: cont1
-          image: shammu101/cycle
+          image: shammu101/cycle:latest
           ports:
             - containerPort: 80
 
@@ -194,3 +195,9 @@ spec:
       nodePort: 32000
 ```
 <img width="1171" height="631" alt="image" src="https://github.com/user-attachments/assets/e5dc1b91-4c72-47db-a803-93f877423cab" />
+
+--------------------------------------
+## Create the Pod and Service Files
+```
+kubectl create -f dep.yml
+```
