@@ -120,6 +120,7 @@ kubectl create -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/con
 ```
 vim dep.yml
 ```
+```
 apiVersion: apps/v1
 kind: Deployment
 matadata:
