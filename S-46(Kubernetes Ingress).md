@@ -77,72 +77,32 @@ app2.example.com → app2-service
 Very common in production.
 
 -----------------------------
-<center><h3>Ingress vs Service (Important Difference)</h3></center>
-Feature	Service	Ingress
-Exposes pods	✅	❌
-Load balancing	✅	❌
-URL routing	❌	✅
-Domain support	❌	✅
-SSL termination	❌	✅
-
-👉 Ingress sits on top of Services.
-
-SSL / HTTPS with Ingress
-
-Ingress supports HTTPS using TLS.
-
-Example:
-
-tls:
-- hosts:
-  - myapp.example.com
-  secretName: tls-secret
-
-
-Ingress handles:
-
-SSL termination
-
-HTTPS traffic
-
-Ingress Controller Is Mandatory ⚠️
-
-Very important interview point:
-
-Creating an Ingress resource without an Ingress Controller does NOTHING.
-
-Ingress Controller examples:
-
-NGINX
-
-AWS ALB
-
-GKE Ingress
-
-When to Use Ingress
+## When to Use Ingress
 
 Use Ingress when:
 
-You have multiple services
+* You have multiple services
 
-Need domain-based access
+* Need domain-based access
 
-Want HTTPS
+* Want HTTPS
 
-Want cost-effective solution
-
-When NOT to Use Ingress
+* Want cost-effective solution
+* 
+--------------------------------
+## When NOT to Use Ingress
 
 Avoid Ingress when:
 
-Simple testing
+* Simple testing
 
-Single app only
+* Single app only
 
-No domain required
+* No domain required
 
 Then NodePort or LoadBalancer is fine.
 
-One-Line Interview Answer 🎯
+------------------------------
+**Ingress is a Kubernetes resource used to expose multiple services externally using HTTP/HTTPS with domain and path-based routing.**
 
-Ingress is a Kubernetes resource used to expose multiple services externally using HTTP/HTTPS with domain and path-based routing.
+--------------------------------------
