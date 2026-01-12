@@ -26,7 +26,7 @@ With Ingress:
 * Access using **domain names and paths**
   
 --------------------
-Real-World Example
+## Real-World Example
 
 **Without Ingress:**
 
@@ -41,92 +41,43 @@ app2 → example.com/app2
 
 -----------------------------
 
-Much cleaner and professional 👍
+## How Ingress Works
 
-How Ingress Works (Important)
+Ingress itself does **NOT work alone.**
 
-Ingress itself does NOT work alone.
+You need **three components:**
 
-You need three components:
+1. **Deployment** (your app)
 
-Deployment (your app)
+2. **Service** (exposes pods internally)
 
-Service (exposes pods internally)
+3. **Ingress + Ingress Controller**
 
-Ingress + Ingress Controller
-
-👉 Ingress Controller is the actual engine.
+=> Ingress Controller is the actual engine.
 
 Common controllers:
 
-NGINX Ingress Controller (most popular)
+* NGINX Ingress Controller (most popular)
 
-AWS ALB Ingress Controller
+* AWS ALB Ingress Controller
 
-Traefik
-
-Ingress Traffic Flow (Very Easy)
-User → Ingress Controller → Ingress Rules → Service → Pods
-
-
-Ingress only routes traffic.
-Service still load-balances to pods.
-
-Basic Ingress YAML File
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
-  name: app-ingress
-spec:
-  rules:
-  - host: myapp.example.com
-    http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: myapp-service
-            port:
-              number: 80
-
-Explanation (Simple)
-host
-host: myapp.example.com
-
-
-Domain name users access.
-
-path
-path: /
-
-
-URL path for routing traffic.
-
-backend
-service:
-  name: myapp-service
-  port:
-    number: 80
-
-
-Ingress forwards traffic to this service.
-
-Path-Based Routing Example
+* Traefik
+----------------------------------
+## Path-Based Routing Example
 /example → app1-service
 /admin   → app2-service
 
-
 One domain, multiple apps.
 
-Host-Based Routing Example
+-----------------------------
+## Host-Based Routing Example
 app1.example.com → app1-service
 app2.example.com → app2-service
 
-
 Very common in production.
 
-Ingress vs Service (Important Difference)
+-----------------------------
+<center><h3>Ingress vs Service (Important Difference)</h3></center>
 Feature	Service	Ingress
 Exposes pods	✅	❌
 Load balancing	✅	❌
