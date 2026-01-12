@@ -201,3 +201,4 @@ spec:
 ```
 kubectl create -f dep.yml
 ```
+<img width="766" height="245" alt="image" src="https://github.com/user-attachments/assets/09214680-289c-4836-9676-e9f8906ac9a8" />
