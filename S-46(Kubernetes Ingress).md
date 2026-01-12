@@ -107,3 +107,10 @@ Then NodePort or LoadBalancer is fine.
 
 --------------------------------------
 <img width="1115" height="732" alt="image" src="https://github.com/user-attachments/assets/07c03557-e8bc-40d2-be56-35e25bbc4522" />
+
+----------------------------------------
+## Install NGINX Ingress Controller
+```
+kubectl create -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.2.1/deploy/static/provider/cloud/deploy.yaml
+```
+<img width="1857" height="537" alt="image" src="https://github.com/user-attachments/assets/0b7cbf81-30a5-454e-8903-7041fc0ea3c6" />
