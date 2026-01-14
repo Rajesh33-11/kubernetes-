@@ -202,3 +202,12 @@ spec:
 kubectl create -f dep.yml
 ```
 <img width="766" height="245" alt="image" src="https://github.com/user-attachments/assets/09214680-289c-4836-9676-e9f8906ac9a8" />
+
+-------------------------------------------
+## Copy the public IP address, open a web browser, and paste the IP address followed by :31000 to access the image.
+<img width="1912" height="900" alt="image" src="https://github.com/user-attachments/assets/0463e525-d07e-4340-abd6-ceea7b037ec8" />
+
+## Copy the public IP address, open a web browser, and paste the IP address followed by :32000 to access the image.
+<img width="1918" height="981" alt="image" src="https://github.com/user-attachments/assets/99a4aab8-f819-4cfb-87bf-2ed998f539b9" />
+
+-------------------------------------------
